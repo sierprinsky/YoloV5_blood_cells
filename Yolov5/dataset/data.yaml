@@ -1,5 +1,5 @@
-train: ../train/images
-val: ../valid/images
+train: /home/andru/Python3Projects/YoloV5_blood_cells/Yolov5/dataset/train/images
+val: /home/andru/Python3Projects/YoloV5_blood_cells/Yolov5/dataset/valid/images
 
 nc: 3
 names: ['Platelets', 'RBC', 'WBC']
