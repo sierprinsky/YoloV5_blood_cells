@@ -1,12 +1,3 @@
-<div align="center">
-<p>
-   <a align="left" href="https://ultralytics.com/yolov5" target="_blank">
-<!--
-   
-</p>
--->
-<div align="center">
-   
 ## <div align="center">Documentation</div>
 
 See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on training, testing and deployment.
@@ -92,11 +83,7 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
                                        yolov5x                                16
 ```
 
-<img width="800" src="https://user-images.githubusercontent.com/26833433/90222759-949d8800-ddc1-11ea-9fa1-1c97eed2b963.png">
-
 </details>
-
-<details open>
 
 
 
@@ -146,5 +133,4 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
 * **TTA** [Test Time Augmentation](https://github.com/ultralytics/yolov5/issues/303) includes reflection and scale augmentations.<br>Reproduce by `python val.py --data coco.yaml --img 1536 --iou 0.7 --augment`
 
 </details>
-
 
