@@ -130,9 +130,104 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
 
 ---------------------------------------------------------------------------------------------------------
 
-Thanks to:
+## <div align="center">Thanks to:</div>
+
 https://roboflow.ai
 
 https://ultralytics.com/
 
 https://github.com/ultralytics/yolov5
+
+---------------------------------------------------------------------------------------------------------
+
+## <div align="center">Training results summary</div>
+
+
+<details>
+<summary>YOLOv5, nano model:</summary>
+
+```bash
+50 epochs completed in 1.421 hours.
+Optimizer stripped from runs/train/exp/weights/last.pt, 3.8MB
+Optimizer stripped from runs/train/exp/weights/best.pt, 3.8MB
+
+Validating runs/train/exp/weights/best.pt...
+Fusing layers... 
+Model summary: 213 layers, 1763224 parameters, 0 gradients, 4.2 GFLOPs
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  12%|█▎        | 1/8 [00:02<00:18,  2.71s/it]                                                         WARNING: NMS time limit 0.300s exceeded
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  25%|██▌       | 2/8 [00:08<00:26,  4.41s/it]                                                         WARNING: NMS time limit 0.300s exceeded
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  38%|███▊      | 3/8 [00:14<00:25,  5.04s/it]                                                         WARNING: NMS time limit 0.300s exceeded
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 8/8 [00:29<00:00,  3.65s/it]                                                         
+                 all         73        967      0.847      0.644      0.669      0.439
+           Platelets         73         76      0.842      0.632      0.664      0.336
+                 RBC         73        819      0.742      0.565      0.605      0.407
+                 WBC         73         72      0.957      0.736      0.736      0.572
+
+```
+</details>
+ 
+
+<details>
+<summary>YOLOv5, small model:</summary>
+
+```bash
+50 epochs completed in 3.031 hours.
+Optimizer stripped from runs/train/exp2/weights/last.pt, 14.3MB
+Optimizer stripped from runs/train/exp2/weights/best.pt, 14.3MB
+
+Validating runs/train/exp2/weights/best.pt...
+Fusing layers... 
+Model summary: 213 layers, 7018216 parameters, 0 gradients, 15.8 GFLOPs
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  12%|█▎        | 1/8 [00:02<00:20,  2.91s/it]                                                         WARNING: NMS time limit 0.300s exceeded
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  38%|███▊      | 3/8 [00:16<00:30,  6.00s/it]                                                         WARNING: NMS time limit 0.300s exceeded
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 8/8 [00:31<00:00,  3.98s/it]                                                         
+                 all         73        967      0.877      0.824      0.854      0.587
+           Platelets         73         76      0.834      0.816       0.83       0.45
+                 RBC         73        819       0.84       0.74      0.831      0.585
+                 WBC         73         72      0.956      0.917      0.902      0.726
+
+```
+</details>
+
+
+<details>
+<summary>YOLOv5, medium model:</summary>
+
+```bash
+50 epochs completed in 6.814 hours.
+Optimizer stripped from runs/train/exp3/weights/last.pt, 42.1MB
+Optimizer stripped from runs/train/exp3/weights/best.pt, 42.1MB
+
+Validating runs/train/exp3/weights/best.pt...
+Fusing layers... 
+Model summary: 290 layers, 20861016 parameters, 0 gradients, 48.0 GFLOPs
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  38%|███▊      | 3/8 [00:25<00:43,  8.78s/it]                                                         WARNING: NMS time limit 0.300s exceeded
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 8/8 [00:55<00:00,  6.95s/it]                                                         
+                 all         73        967      0.905      0.857      0.908       0.63
+           Platelets         73         76      0.875      0.829      0.904      0.494
+                 RBC         73        819       0.87      0.744      0.837      0.592
+                 WBC         73         72      0.969          1      0.983      0.804
+
+```
+</details>
+
+
+<details>
+<summary>YOLOv5, large model:</summary>
+
+```bash
+50 epochs completed in 9.953 hours.
+Optimizer stripped from runs/train/exp4/weights/last.pt, 92.8MB
+Optimizer stripped from runs/train/exp4/weights/best.pt, 92.8MB
+
+Validating runs/train/exp4/weights/best.pt...
+Fusing layers... 
+Model summary: 367 layers, 46119048 parameters, 0 gradients, 107.8 GFLOPs
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 8/8 [00:39<00:00,  4.93s/it]                                                         
+                 all         73        967      0.845      0.913      0.913      0.637
+           Platelets         73         76      0.817      0.882      0.875      0.509
+                 RBC         73        819      0.758      0.856      0.879      0.624
+                 WBC         73         72      0.961          1      0.986      0.778
+Results saved to runs/train/exp4
+```
+</details>
