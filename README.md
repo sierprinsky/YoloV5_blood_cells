@@ -302,3 +302,15 @@ Results saved to runs/val/exp4
 
 ```
 </details>
+
+ 
+ 
+## <div align="center">Detection examples</div>
+
+<p align="left"><img width="600" src="https://github.com/sierprinsky/YoloV5_blood_cells/blob/main/Yolov5/runs/detect/exp4/BloodImage_00038_jpg.rf.63d04b5c9db95f32fa7669f72e4903ca.jpg"></p>
+<details>
+  <summary>YOLOv5-Other example (click to expand)</summary>
+
+<p align="left"><img width="600" src="https://github.com/sierprinsky/YoloV5_blood_cells/blob/main/Yolov5/runs/detect/exp3/BloodImage_00038_jpg.rf.63d04b5c9db95f32fa7669f72e4903ca.jpg"></p>
+</details> 
+ 
