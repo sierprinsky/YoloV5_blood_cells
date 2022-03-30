@@ -231,3 +231,74 @@ Model summary: 367 layers, 46119048 parameters, 0 gradients, 107.8 GFLOPs
 Results saved to runs/train/exp4
 ```
 </details>
+
+ 
+ 
+ 
+ 
+ 
+ ## <div align="center">Validation results summary</div>
+
+
+<details>
+<summary>YOLOv5, nano model:</summary>
+
+```bash
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 3/3 [00:20<00:00,  6.99s/it]                                                         
+                 all         73        967      0.835      0.598      0.608      0.411
+           Platelets         73         76      0.789      0.592      0.587      0.293
+                 RBC         73        819      0.753      0.551      0.585      0.414
+                 WBC         73         72      0.962      0.653      0.651      0.524
+Speed: 3.5ms pre-process, 146.8ms inference, 22.1ms NMS per image at shape (32, 3, 416, 416)
+Results saved to runs/val/exp2
+
+```
+</details>
+ 
+
+<details>
+<summary>YOLOv5, small model:</summary>
+
+```bash
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 3/3 [00:27<00:00,  9.28s/it]                                                         
+                 all         73        967      0.864      0.831      0.856      0.594
+           Platelets         73         76      0.824      0.801      0.803      0.432
+                 RBC         73        819      0.819      0.761      0.844      0.595
+                 WBC         73         72      0.948      0.931      0.921      0.754
+Speed: 3.9ms pre-process, 289.1ms inference, 16.4ms NMS per image at shape (32, 3, 416, 416)
+Results saved to runs/val/exp
+
+```
+</details>
+
+
+<details>
+<summary>YOLOv5, medium model:</summary>
+
+```bash
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 3/3 [00:45<00:00, 15.23s/it]                                                         
+                 all         73        967      0.871      0.893      0.911      0.636
+           Platelets         73         76      0.826      0.877      0.891      0.492
+                 RBC         73        819      0.822      0.801       0.86       0.61
+                 WBC         73         72      0.966          1      0.983      0.805
+Speed: 4.5ms pre-process, 562.6ms inference, 4.7ms NMS per image at shape (32, 3, 416, 416)
+Results saved to runs/val/exp3
+
+```
+</details>
+
+
+<details>
+<summary>YOLOv5, large model:</summary>
+
+```bash
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 3/3 [01:19<00:00, 26.44s/it]                                                         
+                 all         73        967       0.85      0.911      0.914      0.639
+           Platelets         73         76      0.817      0.882      0.876       0.51
+                 RBC         73        819      0.771      0.851      0.882       0.63
+                 WBC         73         72      0.961          1      0.986      0.778
+Speed: 4.0ms pre-process, 1049.5ms inference, 3.1ms NMS per image at shape (32, 3, 416, 416)
+Results saved to runs/val/exp4
+
+```
+</details>
