@@ -303,6 +303,22 @@ Results saved to runs/val/exp4
 ```
 </details>
 
+<details>
+<summary>YOLOv5, Confusion matrix:</summary>
+ 
+ - Nano model:
+<p align="left"><img width="400" src="Yolov5/runs/val/exp2/confusion_matrix.png"></p>
+ 
+ - Small model:
+<p align="left"><img width="400" src="Yolov5/runs/val/exp/confusion_matrix.png"></p>
+ 
+  - Medium model:
+<p align="left"><img width="400" src="Yolov5/runs/val/exp3/confusion_matrix.png"></p>
+ 
+  - Large model:
+<p align="left"><img width="400" src="Yolov5/runs/val/exp4/confusion_matrix.png"></p>
+ 
+</details> 
  
  
 ## <div align="center">Detection examples</div>
